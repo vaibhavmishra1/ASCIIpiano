@@ -1,0 +1,122 @@
+from pynput.keyboard import Key,Listener
+import os
+import logging
+import winsound
+from pygame import mixer
+#log_dir = "C:/Users/user/Desktop/logs/"
+#logging.basicConfig(filename=(log_dir + "key_log.txt"), level=logging.DEBUG, format='%(asctime)s: %(message)s')
+def on_press(key):
+    #logging.info(str(key))
+    #print(key) 
+    ab=str(key)
+    #5print(ab)
+    if ab=="'q'":
+        mixer.init()
+        mixer.music.load('sounds/1.mp3')
+        mixer.music.play()
+    if ab=="'w'":
+        mixer.init()
+        mixer.music.load('sounds/2.mp3')
+        mixer.music.play()
+    if ab=="'e'":
+        mixer.init()
+        mixer.music.load('sounds/3.mp3')
+        mixer.music.play()
+    if ab=="'r'":
+        mixer.init()
+        mixer.music.load('sounds/4.mp3')
+        mixer.music.play()
+    if ab=="'t'":
+        mixer.init()
+        mixer.music.load('sounds/5.mp3')
+        mixer.music.play()
+    if ab=="'y'":
+        mixer.init()
+        mixer.music.load('sounds/6.mp3')
+        mixer.music.play()
+    if ab=="'u'":
+        mixer.init()
+        mixer.music.load('sounds/7.mp3')
+        mixer.music.play()
+    if ab=="'i'":
+        mixer.init()
+        mixer.music.load('sounds/8.mp3')
+        mixer.music.play()
+    if ab=="'o'":
+        mixer.init()
+        mixer.music.load('sounds/9.mp3')
+        mixer.music.play()
+    if ab=="'p'":
+        mixer.init()
+        mixer.music.load('sounds/10.mp3')
+        mixer.music.play()
+    if ab=="'a'":
+        mixer.init()
+        mixer.music.load('sounds/11.mp3')
+        mixer.music.play()
+    if ab=="'s'":
+        mixer.init()
+        mixer.music.load('sounds/12.mp3')
+        mixer.music.play()
+    if ab=="'d'":
+        mixer.init()
+        mixer.music.load('sounds/13.mp3')
+        mixer.music.play()
+    if ab=="'f'":
+        mixer.init()
+        mixer.music.load('sounds/14.mp3')
+        mixer.music.play()
+    if ab=="'g'":
+        mixer.init()
+        mixer.music.load('sounds/15.mp3')
+        mixer.music.play()
+    if ab=="'h'":
+        mixer.init()
+        mixer.music.load('sounds/16.mp3')
+        mixer.music.play()
+    if ab=="'j'":
+        mixer.init()
+        mixer.music.load('sounds/17.mp3')
+        mixer.music.play()
+    if ab=="'k'":
+        mixer.init()
+        mixer.music.load('sounds/18.mp3')
+        mixer.music.play()
+    if ab=="'l'":
+        mixer.init()
+        mixer.music.load('sounds/19.mp3')
+        mixer.music.play()
+    if ab=="'z'":
+        mixer.init()
+        mixer.music.load('sounds/20.mp3')
+        mixer.music.play()
+    if ab=="'x'":
+        mixer.init()
+        mixer.music.load('sounds/21.mp3')
+        mixer.music.play()
+    if ab=="'c'":
+        mixer.init()
+        mixer.music.load('sounds/22.mp3')
+        mixer.music.play()
+    if ab=="'v'":
+        mixer.init()
+        mixer.music.load('sounds/23.mp3')
+        mixer.music.play()
+    if ab=="'b'":
+        mixer.init()
+        mixer.music.load('sounds/24.mp3')
+        mixer.music.play()
+    if ab=="'n'":
+        mixer.init()
+        mixer.music.load('sounds/25.mp3')
+        mixer.music.play()
+    if ab=="'m'":
+        mixer.init()
+        mixer.music.load('sounds/26.mp3')
+        mixer.music.play()
+    
+
+with Listener(on_press=on_press) as listener:
+    listener.join()
+    
+    
